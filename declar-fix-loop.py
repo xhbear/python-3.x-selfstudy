@@ -3,11 +3,13 @@
 daInput = int(input('Enter height of triangle: '))
 x = daInput
 space = ' '; 
-logo = '@'; 
+logo = '@';
+val_space = x - 1;
+val_logo = 1; 
 
 while (x > 0):
-    val_space = x - 1; space = space * val_space
-    val_logo = 1; logo = logo * val_logo
+    space = space * val_space
+    logo = logo * val_logo
     print ('{}{}'.format(space, logo))
     val_space -= 1
     val_logo += 1
